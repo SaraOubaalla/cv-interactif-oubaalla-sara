@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Interactif Sara Oubballa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg #DB7093 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-person-badge me-2"></i>Mon CV Interactif
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="container mt-5 pt-3" id="about">
+        <div class="row align-items-center">
+
+            <div class="col-lg-4 col-md-5 text-center mb-4">
+                <img src="mon image.jpeg" 
+                     alt="Photo professionnelle" class="profile-img rounded-circle img-fluid">
+                <h2 class="mt-3 mb-1"> OUBAALLA Sara</h2>
+                <p class="text-muted mb-3">Etudiante en Informatique Appliqué</p>
+                <button class="btn btn-light" id="toggleTheme">
+                    <i class="bi bi-moon-fill"></i> Thème sombre
+                </button>
+            </div>
+            
+            <!-- Colonne texte -->
+            <div class="col-lg-8 col-md-7 ">
+                <h1 class="section-title">À propos de moi</h1>
+                <p class="lead">Étudiante en licence d'informatique appliquée, passionné par le développement web et motivé par la création d’interfaces web modernes et responsives. Je maîtrise les fondamentaux HTML, CSS, JavaScript et découvre actuellement les frameworks front-end à travers mes projets académiques et personnels.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <p class="mb-2">
+                            <i class="bi bi-geo-alt-fill  me-2"></i>
+                            Maroc, Marrakech
+                        </p>
+                        <p class="mb-2 ">
+                            <i class="bi bi-envelope-fill  me-2"></i>
+                            <a href="s.oubaalla0990@uca.ac.ma" class="text-decoration-none ">s.oubaalla0990@uca.ac.ma</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mb-2">
+                            <i class="bi bi-telephone-fill  me-2"></i>
+                            +0708471408
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        <section class="my-5" id="experience">
+            <h2 class="section-title">Expériences professionnelles</h2>
+            
+            <ul class="nav nav-tabs" id="experienceTab">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#current">Actuelle</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#previous">Précédentes</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#internship">Stages</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content border border-top-0 rounded-bottom p-3">
+                <div class="tab-pane fade show active" id="current">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Chercheur Front-End</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">.....</h6>
+                            <p class="card-text">Développement d'interfaces utilisateur responsive avec Html, Css, Js et Bootstrap.Créer des interactions et des animations impressionnantes et accessibles qui racontent une histoire ou guident l'utilisateur, sans sacrifier les performances..</p>
+                            <span class="badge ">Html</span>
+                            <span class="badge ">CSS</span>
+                            <span class="badge ">JavaScript</span>
+                             <span class="badge ">Bootstrap</span>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="previous">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Développeur Web Junior</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">WebCréa </h6>
+                            <p class="card-text">Création des sites web propres, fonctionnels et adaptés aux mobileset avec HTML/CSS/JavaScript. Maintenance et mise à jour de sites existants. </p>
+                            <span class="badge ">Bootstrap</span>
+                            <span class="badge ">HTML/CSS</span>
+                            <span class="badge ">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="internship">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Stagiaire Développeur Web</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Brega Mode / IT club</h6>
+                            <p class="card-text">Assistance dans la création de sites web responsive, des diplomes, des emploi du temps et des publications.</p>
+                            <span class="badge ">HTML/CSS</span>
+                            <span class="badge ">Photoshop</span>
+                            <span class="badge ">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5" id="education">
+            <h2 class="section-title">Formation</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Etudiante en IAP</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Université Cadi Ayyad Marrakech| 2024 - 2026</h6>
+                            <p class="card-text">Spécialisation en Informatique Appliqué. Concevoir, développer, déployer et maintenir des solutions logicielles et matérielles".</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Baccalauréat en mathématique</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Etablissement Assabila| 2023 - 2024 </h6>
+                            <p class="card-text">La formation en mathématiques développe la pensée abstraite et le raisonnement logique pour modéliser et résoudre des problèmes complexes, qu’ils soient théoriques ou appliqués.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5" id="skills">
+            <h2 class="section-title">Compétences techniques</h2>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="mb-3">Front-End</h5>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>React.js</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            <button class="btn btn-outline-light mt-2" id="showMoreSkills">Voir plus de compétences</button>
+        </section>
+
+        <!-- Projets -->
+        <section class="my-5" id="projects">
+            <h2 class="section-title">Projets réalisés</h2>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Site Musical</h5>
+                            <p class="card-text">Site musical développé avec Html et Bootstrap. Gestion des produits et evenement.</p>
+                            <button class="btn btn-sm btn-outline-light project-detail" data-project="1">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Photoshop</h5>
+                            <p class="card-text">Création des diplomes, certificats, affiches et publications avec Photoshop.</p>
+                            <button class="btn btn-sm btn-outline-light project-detail" data-project="2">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Artistique</h5>
+                            <p class="card-text">Créeation d'un portfolio interactif,avec galerie d'images et formulaire de contact.</p>
+                            <button class="btn btn-sm btn-outline-light project-detail" data-project="3">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centres d'intérêt -->
+        <section class="my-5" id="interests">
+            <h2 class="section-title">Centres d'intérêt</h2>
+            
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="text-center p-3 border rounded">
+                        <i class="bi bi-code-slash fs-1 "></i>
+                        <h5 class="mt-2">Veille technologique</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="text-center p-3 border rounded">
+                        <i class="bi bi-camera fs-1"></i>
+                        <h5 class="mt-2">Photographie</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="text-center p-3 border rounded">
+                        <i class="bi bi-book fs-1 y"></i>
+                        <h5 class="mt-2">Lecture</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="text-center p-3 border rounded">
+                        <i class="bi bi-airplane fs-1 "></i>
+                        <h5 class="mt-2">Voyages</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact -->
+    <footer class="bg-dark text-white py-4 mt-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4>Contactez-moi</h4>
+                    <p>Je suis ouvert aux opportunités de collaboration et aux propositions de projets.</p>
+                </div>
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3 border-top">
+                <p class="mb-2">© 2025 Sara Oubaalla - Tous droits réservés</p>
+                <div>
+                    <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-github fs-5"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="projectModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Détails du projet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="projectModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

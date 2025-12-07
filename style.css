@@ -1,0 +1,218 @@
+:root {
+    --primary-color: #E6B0D2; 
+    --secondary-color: #B0E0E6; 
+    --dark-color: #333;
+    --light-color: #f8f9fa;
+}
+
+#about {
+    margin-top: 120px !important; 
+}
+
+/* Style général */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333 !important;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.bi-geo-alt-fill,.bi-telephone-fill,.bi-envelope-fill {
+    color: #E6B0D2;
+}
+.text-decoration-none {
+    color: #000000 !important; /* Noir pour le texte de l'email */
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+/* Optionnel : Effet au survol pour l'email */
+.text-decoration-none:hover {
+    color: #E6B0D2 !important; /* Rose au survol */
+    text-decoration: underline !important;
+}
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000 !important;
+}
+
+/* Header/About */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.badge{
+    background-color: var(--primary-color) !important; /* Fond rose */
+    color: #E6B0D2;
+}
+
+.section-title {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Boutons */
+.btn-light {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #333;
+    font-weight: 500;
+}
+
+.btn-light:hover {
+    background-color: #d89fc1;
+    border-color: #d89fc1;
+    color: #333;
+}
+
+.btn-outline-light {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* Onglets Expérience */
+.nav-tabs .nav-link {
+    border: none;
+    color: #666;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    background-color: transparent;
+}
+
+.tab-content {
+    background-color: white;
+}
+
+/* Cartes */
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-body {
+    border-radius: 10px;
+}
+
+/* Badges */
+.badge {
+    background-color: var(--secondary-color) !important;
+    color: #333;
+    padding: 6px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Barres de compétences */
+.skill-bar {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+/* Section centres d'intérêt */
+#interests .border {
+    border-color: var(--secondary-color) !important;
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+#interests .border:hover {
+    border-color: var(--primary-color) !important;
+    background-color: rgba(230, 176, 210, 0.1);
+}
+
+#interests .fs-1 {
+    color: var(--primary-color);
+}
+
+/* Footer/Contact */
+footer {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    color: #333;
+}
+
+footer .form-control {
+    border: none;
+    border-radius: 5px;
+}
+
+footer .form-control:focus {
+    box-shadow: 0 0 0 3px rgba(176, 224, 230, 0.5);
+}
+
+/* Modal */
+.modal-header {
+    background-color: var(--primary-color);
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #interests .col-md-3 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Animation pour les barres de compétences */
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: attr(data-width); }
+}
